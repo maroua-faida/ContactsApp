@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ajouter_contact"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/champ">
+
+
+    <LinearLayout
+        android:id="@+id/layout_add"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" ADD CONTACT"
+            android:textColor="@color/rose"
+            android:textSize="30dp"
+
+            android:padding="20dp"/>
+        <EditText
+            android:id="@+id/firstname_add"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            android:textSize="20dp"
+            android:padding="20dp"/>
+        <EditText
+            android:id="@+id/lastname_add"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            android:textSize="20dp"
+            android:padding="20dp"/>
+        <EditText
+            android:id="@+id/job_add"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="Job"
+            android:textSize="20dp"
+            android:padding="20dp"/>
+        <EditText
+            android:id="@+id/phone_add"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="phone"
+            android:textSize="20dp"
+            android:padding="20dp"/>
+        <EditText
+            android:id="@+id/email_add"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textSize="20dp"
+            android:padding="20dp"/>
+
+
+        <Button
+            android:id="@+id/btt_add"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple_200"
+            android:layout_marginTop="20dp"
+            android:onClick="add_user"
+            android:text="ADD"/>
+        <Button
+            android:id="@+id/btt_cancel_acc"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/champ"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:text="cancel"/>
+
+    </LinearLayout>
+</LinearLayout>
