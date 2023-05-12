@@ -31,42 +31,51 @@
             android:layout_height="wrap_content"
             android:hint="First Name"
             android:textSize="20dp"
-            android:padding="20dp"/>
+            android:padding="20dp"
+            android:textColor="@color/rose"
+            android:textColorHint="@color/rose"/>
         <EditText
             android:id="@+id/lastname_add"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:hint="Last Name"
             android:textSize="20dp"
-            android:padding="20dp"/>
+            android:padding="20dp"
+            android:textColor="@color/rose"
+            android:textColorHint="@color/rose"/>
         <EditText
             android:id="@+id/job_add"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:hint="Job"
             android:textSize="20dp"
-            android:padding="20dp"/>
+            android:padding="20dp"
+            android:textColor="@color/rose"
+            android:textColorHint="@color/rose"/>
         <EditText
             android:id="@+id/phone_add"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:hint="phone"
             android:textSize="20dp"
-            android:padding="20dp"/>
+            android:padding="20dp"
+            android:textColor="@color/rose"
+            android:textColorHint="@color/rose"/>
         <EditText
             android:id="@+id/email_add"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:hint="Email"
             android:textSize="20dp"
-            android:padding="20dp"/>
-
+            android:padding="20dp"
+            android:textColor="@color/rose"
+            android:textColorHint="@color/rose"/>
 
         <Button
             android:id="@+id/btt_add"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/purple_200"
+            android:backgroundTint="@color/powder_blue"
             android:layout_marginTop="20dp"
             android:onClick="add_user"
             android:text="ADD"/>

@@ -30,14 +30,18 @@
             android:layout_height="wrap_content"
             android:hint="First Name"
             android:textSize="20dp"
-            android:padding="20dp"/>
+            android:padding="20dp"
+            android:textColor="@color/rose"
+            android:textColorHint="@color/rose"/>
         <EditText
             android:id="@+id/lastname_acc"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:hint="Last Name"
             android:textSize="20dp"
-            android:padding="20dp"/>
+            android:padding="20dp"
+            android:textColor="@color/rose"
+            android:textColorHint="@color/rose"/>
         <EditText
             android:id="@+id/birthdate_acc"
             android:layout_width="350dp"
@@ -47,6 +51,8 @@
             android:textSize="20dp"
             android:padding="20dp"
             android:src="@drawable/baseline_calendar_month_24"
+            android:textColor="@color/rose"
+            android:textColorHint="@color/rose"
             />
         <EditText
             android:id="@+id/username_acc"
@@ -54,15 +60,19 @@
             android:layout_height="wrap_content"
             android:hint="User Name"
             android:textSize="20dp"
-            android:padding="20dp"/>
+            android:padding="20dp"
+            android:textColor="@color/rose"
+            android:textColorHint="@color/rose"/>
         <EditText
             android:id="@+id/password_acc"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:inputType="textPassword"
+            
             android:hint="Password"
             android:textSize="20dp"
-            android:padding="20dp"/>
+            android:padding="20dp"
+            android:textColor="@color/rose"
+            android:textColorHint="@color/rose"/>
         <Button
             android:id="@+id/btt_singapp_acc"
             android:layout_width="300dp"

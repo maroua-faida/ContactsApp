@@ -1,6 +1,6 @@
 package com.example.contactsapp;
 
-public class contact {
+public class Contact {
 
     public String getFirst_name() {
         return first_name;
@@ -48,6 +48,16 @@ public class contact {
     private String email;
     private String tel;
 
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    private String image;
+
     public String getKey() {
         return Key;
     }
@@ -58,16 +68,17 @@ public class contact {
 
     private String Key;
 
-    public contact() {
 
-    }
-    public contact(String first_name, String last_name, String job, String email, String tel) {
+    public Contact(String first_name, String last_name, String job, String email, String tel, String img) {
         this.first_name = first_name;
         this.last_name = last_name;
         this.job = job;
         this.email = email;
         this.tel = tel;
+        this.image= img;
     }
+    public Contact() {
 
+    }
 
 }

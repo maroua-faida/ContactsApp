@@ -6,13 +6,10 @@ import android.os.Bundle;
 import android.view.View;
 
 import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -24,6 +21,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class liste_contacts extends AppCompatActivity {
 
@@ -31,7 +29,7 @@ public class liste_contacts extends AppCompatActivity {
     DatabaseReference database;
     Adab myAdapter;
     FloatingActionButton fab;
-    ArrayList<contact> list;
+    ArrayList<Contact> list;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,11 +56,16 @@ public class liste_contacts extends AppCompatActivity {
 
                 for (DataSnapshot dataSnapshot : snapshot.getChildren()){
 
+                    String imageUrl = dataSnapshot.child("image").getValue().toString();
 
-                    contact contact = dataSnapshot.getValue(contact.class);
 
-                    contact.setKey(dataSnapshot.getKey());
-                    list.add(contact);
+
+                    Contact contact1=dataSnapshot.getValue(Contact.class);
+
+
+                    contact1.setImage(imageUrl);
+                    contact1.setKey(dataSnapshot.getKey());
+                    list.add(contact1);
 
 
                 }
